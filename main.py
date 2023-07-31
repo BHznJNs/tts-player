@@ -25,6 +25,7 @@ class window(QWidget):
         super().__init__()
         self.resize(500,180)
         self.setWindowTitle("TTS GUI")
+        self.setWindowFlags(Qt.WindowStaysOnTopHint)
         self.initUI()
     
     def initUI(self):
